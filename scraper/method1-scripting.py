@@ -28,11 +28,11 @@ def internal_url_scraper(url, set_of_urls, list_of_urls):
 
                 set_of_urls.add(_url)
                 write_to_file('method1.txt', _url)
-                print(_url)
 
                 if 'medium.com' in _url:
                     list_of_urls.append(_url)
 
+        # stopping condition
         if len(list_of_urls) > 1000:
             break
 

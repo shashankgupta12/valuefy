@@ -30,6 +30,7 @@ def internal_url_scraper(url):
 
     global set_of_urls
 
+    # stopping condition
     if len(set_of_urls) > 100:
         return
 
